@@ -2,7 +2,7 @@ language: java
 deploy:
   provider: pages
   skip-cleanup: true
-  github-token: AWIqsg6x9HGmw8inQCxKVg
+  github-token: 8f3b66b9e3a9453123b684822c6a8f194d03e830
   keep-history: true
   on:
     branch: master
