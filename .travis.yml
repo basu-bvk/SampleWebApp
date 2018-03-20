@@ -1,4 +1,5 @@
 language: java
+script: echo "like it's cat meow 99" && true
 deploy:
   provider: pages
   skip-cleanup: true
