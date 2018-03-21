@@ -2,6 +2,13 @@
 
 SampleWebApp is designed to test build automation
 
+Help:
+-----
+
+More help is available from Shri Gowri Solutions LLP - Banglore 
+
+http://www.shrigowri.com/
+
 License:
 --------
 
