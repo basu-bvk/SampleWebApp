@@ -3,7 +3,7 @@ script: echo "like it's cat meow 99" && true
 deploy:
   provider: pages
   skip-cleanup: true
-  github-token: $GITHUB_TOKEN
+  github-token: AWIqsg6x9HGmw8inQCxKVg
   keep-history: true
   on:
     branch: master
