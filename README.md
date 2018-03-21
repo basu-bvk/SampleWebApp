@@ -1,6 +1,6 @@
 # SampleWebApp
 
-
+SampleWebApp is designed to test build automation
 
 Code status:
 ------------
