@@ -1,3 +1,3 @@
 #!/bin/bash
 docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD";
-docker push vinnycrm/SampleWebApp
+docker push vinnycrm/samplewebapp
