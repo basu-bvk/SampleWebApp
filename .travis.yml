@@ -1,6 +1,7 @@
-language: java
 sudo: required
-skip_cleanup: true
+language: java
+services:
+  - docker
 deploy:
   provider: script
   script: bash docker_push.sh
