@@ -11,5 +11,4 @@ deploy:
     branch: master
 addons:
   artifacts: true
-    target_paths: /${TRAVIS_REPO_SLUG}/${TRAVIS_BUILD_NUMBER}/${TRAVIS_JOB_NUMBER}
     
