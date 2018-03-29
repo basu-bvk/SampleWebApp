@@ -6,6 +6,4 @@ deploy:
   api_key: $GIT_KEY
   file: "swa_webservice.war"
   skip_cleanup: true
-    on:
-    tags: true
     
