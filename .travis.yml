@@ -1,6 +1,6 @@
 sudo: required
 language: java
-script: mvn clean install -Ph2 -Plocal
+script: mvn verify
 services:
   - docker
 deploy:
