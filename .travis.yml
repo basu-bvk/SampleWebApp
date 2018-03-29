@@ -1,9 +1,12 @@
 sudo: required
 language: java
 script: mvn verify
+services:
+  - docker
 deploy:
-  provider: releases
-  api_key: $GIT_KEY
-  file: "swa_webservice.war"
+  provider: script
+  script: bash docker_push
   skip_cleanup: true
+  on:
+    branch: master
     
