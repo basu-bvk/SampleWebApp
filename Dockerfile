@@ -1,6 +1,7 @@
 # Docker file for tomcat
 FROM tomcat:8.0.43-jre8
-ADD **/*.war /usr/local/tomcat/webapps/
+
+COPY **/*.war /usr/local/tomcat/webapps/
 
 EXPOSE 8080
 CMD chmod +x /usr/local/tomcat/bin/catalina.sh
