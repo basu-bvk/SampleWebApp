@@ -1,9 +1,8 @@
 # Docker file for tomcat
 FROM tomcat:8.0.43-jre8
 
-# Adding linshare war file
+ENV WAR_FILE=/usr/local/my_app/swa_webservice/target/swa_webservice.war
 
-# . is giving this path /var/lib/docker/tmp/docker-builder460409013 
 RUN mkdir -p /usr/local/my_app
 RUN ADD . /usr/local/my_app/
 RUN ADD "$WAR_FILE" /usr/local/tomcat/webapps/
