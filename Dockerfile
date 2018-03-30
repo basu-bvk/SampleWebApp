@@ -7,8 +7,8 @@ FROM tomcat:8.0.43-jre8
 RUN mkdir -p /usr/local/my_app
 RUN cd /
 ADD . /usr/local/my_app/
-RUN echo $WAR_PATH
-ADD $WAR_PATH /usr/local/tomcat/webapps/
+RUN echo ${WAR_PATH}
+ADD ${WAR_PATH} /usr/local/tomcat/webapps/
 
 EXPOSE 8080
 CMD chmod +x /usr/local/tomcat/bin/catalina.sh
