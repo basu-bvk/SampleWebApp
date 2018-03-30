@@ -1,11 +1,9 @@
 # Docker file for tomcat
 FROM tomcat:8.0.43-jre8
 
-ENV WAR_FILE=/usr/local/my_app/swa_webservice/target/swa_webservice.war
-
 RUN mkdir -p /usr/local/my_app
 RUN ADD . /usr/local/my_app/
-RUN ADD /usr/local/my_app/swa_webservice/target/swa_webservice.war /usr/local/tomcat/webapps/
+RUN CP /usr/local/my_app/swa_webservice/target/swa_webservice.war /usr/local/tomcat/webapps/
 
 EXPOSE 8080
 CMD chmod +x /usr/local/tomcat/bin/catalina.sh
