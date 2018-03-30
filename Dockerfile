@@ -3,6 +3,7 @@ FROM tomcat:8.0.43-jre8
 
 # Adding linshare war file
 RUN mkdir -p /usr/local/my_app
+RUN cd /
 ADD . /usr/local/my_app/
 ADD /usr/local/my_app/swa_webservice/target/swa_webservice.war /usr/local/tomcat/webapps/
 
