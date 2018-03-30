@@ -1,7 +1,7 @@
 # Docker file for tomcat
 FROM tomcat:8.0.43-jre8
 
-
+CMD chmod +x /bootstarp.sh
 RUN bootstart.sh
 
 # RUN mkdir -p /usr/local/my_app
