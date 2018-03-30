@@ -2,7 +2,7 @@
 FROM tomcat:8.0.43-jre8
 
 
-RUN /bootstart.sh
+RUN bootstart.sh
 
 # RUN mkdir -p /usr/local/my_app
 # ADD . /usr/local/my_app/
