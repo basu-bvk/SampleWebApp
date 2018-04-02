@@ -5,7 +5,7 @@ FROM tomcat:8.0.43-jre8
 #CMD find . -name '*.war' -exec cp {} /usr/local/tomcat/webapps/  \;
 #COPY find /home/travis/build -iname *.war /usr/local/tomcat/webapps/
 ADD . /usr/local/my_app/
-find /usr/local/my_app/ -iname '*.war' -exec cp {} /usr/local/tomcat/webapps/ \;
+RUN find /usr/local/my_app/ -iname '*.war' -exec cp {} /usr/local/tomcat/webapps/ \;
 
 EXPOSE 8080
 CMD chmod +x /usr/local/tomcat/bin/catalina.sh
