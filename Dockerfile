@@ -1,8 +1,10 @@
 # Docker file for tomcat
 FROM tomcat:8.0.43-jre8
 
-# COPY **/*.war /usr/local/tomcat/webapps/
-CMD find . -name '*.war' -exec cp {} /usr/local/tomcat/webapps/  \;
+#COPY . /usr/local/tomcat/webapps/
+#CMD find . -name '*.war' -exec cp {} /usr/local/tomcat/webapps/  \;
+#COPY find /home/travis/build -iname *.war /usr/local/tomcat/webapps/
+CMD find /home/travis/build -iname '*.war' -exec cp {} /usr/local/tomcat/webapps/ \;
 
 EXPOSE 8080
 CMD chmod +x /usr/local/tomcat/bin/catalina.sh
